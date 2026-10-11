@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PLANT NHRL Battlebot — FriedLongJohns</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="site-title"><a href="../../index.html">FriedLongJohns</a></p>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="../../index.html">About</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <p class="back-bar"><a href="../blog.html">&lt; Back to projects</a></p>
+    <p class="page-kicker">[23 09 2026]</p>
+    <h1>PLANT NHRL Battlebot</h1>
+    <p class="post-subtitle">I started working on an antweight battlebots robot</p>
+    <hr class="rule">
+
+    <p>
+      Ever watched Battlebots on TV? I think it's pretty fun watching 250-lb robots tear each other apart. So when I heard they've got a similar thing at Purdue...
+    </p>
+    <p>
+      Awww yeah.
+    </p>
+    <p>
+      The club I'm in is competes in NHRL. A much lighter game than battlebots, competitions have 3, 12, and 30 lb brackets. For our beginner project, my team is fighting at our school's local Plastic Antweight (PLANT) competition. 
+    </p>
+    
+    
+    <hr class="rule">
+    <h2>Primary design iterations</h2>
+    
+    
+    <p>
+      Our team wanted to build a Melty bot - a type of bot that spins it's entire body as a weapon in order to get much more energy out of it. The more senior members convinced me we should do a ring spinner archetype, so I got to work on a brainstorming version.
+    </p>
+    
+    <div class="small-middle">
+        <figure class="figure-frame">
+          <img src="20260923 battlebot/protobot.png" alt="Prototype bot CAD" data-zoom>
+        <figcaption>Onshape is a gift.</figcaption>
+        </figure>
+    </div>
+    <p>
+      Pretty rough, but you can already see the frontal brushless motor driving a belted pulley in order to save vertical space.
+    </p>
+    
+    <div>
+      <div class="carousel half-right" data-carousel>
+        <div class="carousel-viewport">
+          <ul class="carousel-track">
+            <li class="carousel-slide is-active">
+              <img src="20260923 battlebot/belt iso.png" alt="Belt drive iso view" data-zoom>
+            </li>
+            <li class="carousel-slide">
+              <img src="20260923 battlebot/direct inline iso.png" alt="Direct drive iso view" data-zoom>
+            </li>
+            <li class="carousel-slide">
+              <img src="20260923 battlebot/belt side.png" alt="Belt drive side view" data-zoom>
+            </li>
+            <li class="carousel-slide">
+              <img src="20260923 battlebot/direct inline side.png" alt="Direct drive side view" data-zoom>
+            </li>
+          </ul>
+        </div>
+        <div class="carousel-controls">
+          <button type="button" data-carousel-prev>Prev</button>
+          <span class="carousel-status" data-carousel-status>1 / 3</span>
+          <button type="button" data-carousel-next>Next</button>
+        </div>
+      </div>
+      
+      <p style="display: inline;">
+        Ring spinners are pretty heavy, so we decided to compact the design by fitting the motors much closer together.
+        We considered gears and chains, but both would deal poorly with massive impacts during matches.
+        <br><br>
+        I also discovered that the <i>entire</i> top of the brushless motor rotates, so I changed the design to let the motor directly drive the weapon ring with friction, using O-rings mounted on a 3d printed cover.
+        <br><br>
+        Do mind the decorations on the direct drive's baseplate.
+      </p>
+    </div>
+    
+    <p>
+      <br>
+      While our ring was retained with one driving and two bearing wheels along the equator, this leaves the ring vulnerable to up/down attacks like saws or flippers.
+      Most ring bots retain their rings by having vertical bearings as well as horizontal ones, but bearings are heavy and we want to save weight.
+      <br><br>
+      So I took some inspiration from a much bigger battlebots brother: The Ringmaster.
+    </p>
+    
+    <div>
+      <div class="small-left">
+        <figure class="figure-frame">
+          <img src="20260923 battlebot/The_Ringmaster_bearings.webp" alt="Ringmaster's bearings" data-zoom>
+        <figcaption>The MANY angled bearings of the Ringmaster battlebot</figcaption>
+        </figure>
+      </div>
+      <div class="small-right">
+          <figure class="figure-frame">
+            <img src="20260923 battlebot/bbs 4x top.png" alt="Our bearings" data-zoom>
+          <figcaption>Most ring spinners use 4 sets of bearings, and so do we.</figcaption>
+          </figure>
+      </div>
+      <div class="small-middle" >
+          <figure class="figure-frame">
+            <img src="20260923 battlebot/bbs bearing side.png" alt="" data-zoom>
+          <figcaption>A very crude version of the ringmaster's bearings</figcaption>
+          </figure>
+      </div>
+    </div>
+    <!-- vertical spacing -->
+    <hr class="irule">
+    <hr class="irule">
+    <hr class="irule">
+    <hr class="rule">
+    <h2>First Test Prints</h2>
+    
+    <p>With the ring problem (somewhat) solved, we made some test prints.</p>
+    
+    <div class="small-right" >
+          <figure class="figure-frame">
+            <img src="20260923 battlebot/battlebotprints/pv1 topplate.jpg" alt="" data-zoom>
+          <figcaption>Original top plate design. Not durable.</figcaption>
+          </figure>
+      </div>
+    
+    <p>You can see the battery access panel splits this top plate design into 2 pieces. Not a good idea, in terms of strength.</p>
+    <p>The second test print has much of the walls and lower motor blocks directly printed into the bottom plate, and I've even put in the power switch to check it's fit. Most of the screw holes worked first try, fortunately.</p>
+    
+    
+    <div>
+      <div class="carousel small-left" data-carousel>
+        <div class="carousel-viewport">
+          <ul class="carousel-track">
+            <li class="carousel-slide is-active">
+              <img src="20260923 battlebot/battlebotprints/pv2 assy2.jpg" alt="" data-zoom>
+            </li>
+            <li class="carousel-slide">
+              <img src="20260923 battlebot/battlebotprints/pv2 topplate.jpg" alt="" data-zoom>
+            </li>
+            <li class="carousel-slide">
+              <img src="20260923 battlebot/battlebotprints/pv2 bottom.jpg" alt="" data-zoom>
+            </li>
+          </ul>
+        </div>
+        <div class="carousel-controls">
+          <button type="button" data-carousel-prev>Prev</button>
+          <span class="carousel-status" data-carousel-status>1 / 3</span>
+          <button type="button" data-carousel-next>Next</button>
+        </div>
+      </div>
+      
+    <hr class="irule">
+    <hr class="irule">
+    <hr class="irule">
+    <hr class="irule">
+    <hr class="irule">
+    <hr class="irule">
+    <hr class="irule">
+    <hr class="irule">
+    <hr class="irule">
+    <hr class="irule">
+    <hr class="irule">
+    <hr class="irule">
+    <hr class="irule">
+    
+    <hr class="rule">
+    
+    <p>That's about as far as this project has gotten. This post will be updated as the project progresses!</p>
+    
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a href="../blog.html">&lt; Back to projects</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </footer>
+  <script src="../site.js"></script>
+</body>
+</html>
