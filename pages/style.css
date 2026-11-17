@@ -1,8 +1,10 @@
 :root {
   --bg: #f6f1fa;
-  --panel: #fbf8fd;
+  /* --bg: #ffffff; */
+  --panel: #efe1f8;
   --text: #1c1424;
-  --muted: #5e5568;
+  --muted: #3f3946;
+  /* --border: #cfc2db; */
   --border: #cfc2db;
   --accent: #5c3d78;
   --focus: #7a4fa0;
@@ -167,6 +169,7 @@ h1 {
 h2 {
   margin: 1.5rem 0 0.6rem;
   font-size: 1.15rem;
+  text-align: center;
 }
 
 p {
@@ -185,6 +188,10 @@ hr.rule {
 
 hr.irule {
   margin: 1.4rem 0;
+  border: none;
+}
+hr.irule5 {
+  margin: 7rem 0;
   border: none;
 }
 
@@ -469,7 +476,7 @@ button:hover {
 }
 
 .half-middle {
-  width: 50%;
+  width: 40%;
   margin-inline: auto;
 }
 
@@ -480,8 +487,14 @@ button:hover {
 
 .half-right {
   float: right;
-  width: 50%;
+  width: 40%;
   margin-left: 20px;
+}
+
+.half-left {
+  float: left;
+  width: 40%;
+  margin-right: 20px;
 }
 
 .small-right {
